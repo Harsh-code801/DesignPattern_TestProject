@@ -1,42 +1,10 @@
 ﻿using DesignPattern_TestProject.Observer.Observable;
 using DesignPattern_TestProject.Observer.Observer;
 using DesignPattern_TestProject.Observer_Pattern.Observable;
+using DesignPattern_TestProject.Strategy;
 
 namespace DesignPattern_TestProject 
 {
-    #region Strategy Design Pattern
-    public interface VehicalFeature
-    {
-        void drive();
-    }
-    public class Sports : VehicalFeature
-    {
-        void VehicalFeature.drive()
-        {
-            Console.WriteLine("Sports Car");
-        }
-    }
-    public class Normal : VehicalFeature
-    {
-        void VehicalFeature.drive()
-        {
-            Console.WriteLine("Normal Car");
-        }
-    }
-    public class Vehical
-    {
-        VehicalFeature vehicalFeature;
-        public Vehical(VehicalFeature vehicalFeature)
-        {
-            this.vehicalFeature = vehicalFeature;
-        }
-        public void Drive()
-        {
-            vehicalFeature.drive();
-        }
-    }
-    #endregion
-
     internal class Program
     {
         #region Strategy Design Pattern
